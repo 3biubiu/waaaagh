@@ -3,8 +3,8 @@
     "Name": "12",
     "ModelID": "7f3464c71abd473cb0f69b31fb359d4d",
     "FileReferences": {
-        "Icon": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/icon.png",
-        "Model": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/12.model3.json",
+        "Icon": "icon.png",
+        "Model": "12.model3.json",
         "IdleAnimation": "",
         "IdleAnimationWhenTrackingLost": ""
     },
