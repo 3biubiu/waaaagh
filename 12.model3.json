@@ -1,12 +1,12 @@
 {
 	"Version": 3,
 	"FileReferences": {
-		"Moc": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@main/12.moc3",
+		"Moc": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/12.moc3",
 		"Textures": [
-			"https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@main/12.1024/texture_00.png"
+			"https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/12.1024/texture_00.png"
 		],
-		"Physics": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@main/12.physics3.json",
-		"DisplayInfo": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@main/12.cdi3.json"
+		"Physics": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/12.physics3.json",
+		"DisplayInfo": "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/12.cdi3.json"
 	},
 	"Groups": [
 		{
