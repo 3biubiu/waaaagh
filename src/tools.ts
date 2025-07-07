@@ -49,14 +49,15 @@ class ToolsManager {
         icon: fa_comment,
         callback: async () => {
           // Add hitokoto.cn API
-          const response = await fetch('https://v1.hitokoto.cn');
+          
+          const response = await fetch('https://ipapi.co/json/');
           const result = await response.json();
-          const template = tips.message.hitokoto;
-          const text = i18n(template, result.from, result.creator);
-          showMessage(result.hitokoto, 6000, 9);
-          setTimeout(() => {
-            showMessage(text, 4000, 9);
-          }, 6000);
+          const template = tips.message.showip;
+          const ip = result.ip;
+          const city = result.city; // 城市
+          const country = result.country_name; // 国家
+          const text = i18n(template, ip, city, country);
+          showMessage(ip, 6000, 9);
         }
       },
       hitokoto: {

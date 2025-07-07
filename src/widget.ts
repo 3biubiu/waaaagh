@@ -41,6 +41,7 @@ interface Tips {
     photo: string;
     goodbye: string;
     hitokoto: string;
+    showip: string;
     welcome: string;
     referrer: string;
     hoverBody: string;
