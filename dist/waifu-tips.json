@@ -566,7 +566,7 @@
     {
       "name": "Potion-Maker/Pio",
       "paths": [
-        "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@test/model/12.model3.json"
+        "https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/model/12.model3.json"
       ],
       "message": "我是 哥布林 酱 ~"
     }
