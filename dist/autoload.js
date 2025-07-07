@@ -40,7 +40,7 @@ function loadExternalResource(url, type) {
   // Avoid cross-origin issues with image resources
   // 避免图片资源跨域问题
   const OriginalImage = window.Image;
-  window.Image = function (...args) {
+  window.Image = function(...args) {
     const img = new OriginalImage(...args);
     img.crossOrigin = "anonymous";
     return img;
@@ -55,13 +55,13 @@ function loadExternalResource(url, type) {
   // For detailed usage of configuration options, see README.en.md
   // 配置选项的具体用法见 README.md
   initWidget({
-    waifuPath: 'https://cdn.jsdelivr.net/gh/3biubiu/waaaagh@latest/tips.json',
+    waifuPath: live2d_path + 'waifu-tips.json',
     // cdnPath: 'https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/',
     cubism2Path: live2d_path + 'live2d.min.js',
     cubism5Path: 'https://cubism.live2d.com/sdk-web/cubismcore/live2dcubismcore.min.js',
-    tools: [],
+    tools: ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit'],
     logLevel: 'warn',
-    drag: true,
+    drag: false,
   });
 })();
 
