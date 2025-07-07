@@ -13,6 +13,19 @@ class ToolsManager {
     constructor(model, config, tips) {
         this.config = config;
         this.tools = {
+            showip: {
+                icon: fa_comment,
+                callback: () => __awaiter(this, void 0, void 0, function* () {
+                    const response = yield fetch('https://ipapi.co/json/');
+                    const result = yield response.json();
+                    const template = tips.message.showip;
+                    const ip = result.ip;
+                    const city = result.city;
+                    const country = result.country_name;
+                    const text = i18n(template, ip, city, country);
+                    showMessage(ip, 6000, 9);
+                })
+            },
             hitokoto: {
                 icon: fa_comment,
                 callback: () => __awaiter(this, void 0, void 0, function* () {
