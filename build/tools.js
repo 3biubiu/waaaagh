@@ -23,7 +23,7 @@ class ToolsManager {
                     const city = result.city;
                     const country = result.country_name;
                     const text = i18n(template, ip, city, country);
-                    showMessage(ip, 6000, 9);
+                    showMessage(text, 6000, 9);
                 })
             },
             hitokoto: {

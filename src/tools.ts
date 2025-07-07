@@ -49,7 +49,6 @@ class ToolsManager {
         icon: fa_comment,
         callback: async () => {
           // Add hitokoto.cn API
-          
           const response = await fetch('https://ipapi.co/json/');
           const result = await response.json();
           const template = tips.message.showip;
@@ -57,7 +56,7 @@ class ToolsManager {
           const city = result.city; // 城市
           const country = result.country_name; // 国家
           const text = i18n(template, ip, city, country);
-          showMessage(ip, 6000, 9);
+          showMessage(text, 6000, 9);
         }
       },
       hitokoto: {
