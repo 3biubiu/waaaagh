@@ -45,6 +45,20 @@ class ToolsManager {
   constructor(model: ModelManager, config: Config, tips: Tips) {
     this.config = config;
     this.tools = {
+      showip: {
+        icon: fa_comment,
+        callback: async () => {
+          // Add hitokoto.cn API
+          const response = await fetch('https://v1.hitokoto.cn');
+          const result = await response.json();
+          const template = tips.message.hitokoto;
+          const text = i18n(template, result.from, result.creator);
+          showMessage(result.hitokoto, 6000, 9);
+          setTimeout(() => {
+            showMessage(text, 4000, 9);
+          }, 6000);
+        }
+      },
       hitokoto: {
         icon: fa_comment,
         callback: async () => {
