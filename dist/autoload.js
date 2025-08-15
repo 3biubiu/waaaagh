@@ -1,11 +1,6 @@
-/*!
- * Live2D Widget
- * https://github.com/stevenjoezhang/live2d-widget
- */
-
 // Recommended to use absolute path for live2d_path parameter
 // live2d_path 参数建议使用绝对路径
-const live2d_path = 'https://fastly.jsdelivr.net/gh/3biubiu/waaaagh@latest/dist/';
+const live2d_path = 'https://testingcf.jsdelivr.net/gh/3biubiu/waaaagh@latest/dist/';
 // const live2d_path = 'http://127.0.0.1:5500/dist/';
 
 // Method to encapsulate asynchronous resource loading
